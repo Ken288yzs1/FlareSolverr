@@ -52,7 +52,7 @@ jobs:
           push: true
           platforms: ${{ github.event.inputs.platforms }}
           tags: |
-            ${{ secrets.DOCKERHUB_USERNAME }}/flaresolverr:${{ github.event.inputs.version }}
-            ${{ secrets.DOCKERHUB_USERNAME }}/flaresolverr:latest
+            ${{ secrets.DOCKERHUB_USERNAME }}/al:${{ github.event.inputs.version }}
+            ${{ secrets.DOCKERHUB_USERNAME }}/al:latest
           cache-from: type=gha
           cache-to: type=gha,mode=max
